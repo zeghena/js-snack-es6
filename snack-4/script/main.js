@@ -35,3 +35,11 @@ const teams = [
       foul: 0,
     },
   ];
+
+  teams.forEach((team) =>{
+    team.score = getRandomNumber(1, 100)
+    team.foul = getRandomNumber(1, 80)
+
+    console.log(team)
+
+  })

@@ -19,22 +19,24 @@
 
 // // ### funzione numero Randomico
 
-// function getRandomNumber(min , max){
-//     min = parseInt(min);
-//     max = parseInt(max);
+function getRandomNumber(min , max){
+    min = parseInt(min);
+    max = parseInt(max);
 
-//     if(isNaN(min) || isNaN(max)){
-//     alert("I valori inseriti devono essere numerici");
-//     return;
-//     }
+    if(isNaN(min) || isNaN(max)){
+    alert("I valori inseriti devono essere numerici");
+    return;
+    }
 
-//     if(min >= max){
-//         console.log("il valore massimo deve essere maggiore del valore minimo");
-//         return;
-//     }
+    if(min >= max){
+        console.log("il valore massimo deve essere maggiore del valore minimo");
+        return;
+    }
 
-//     const randomNumber = (MathFloor(Math.random) * (max - min +1) + min);
-//     return randomNumber;
+    const getRandomNumber = (MathFloor(Math.random() * (max - min +1) + min));
 
-
-// }
+    return getRandomNumber;
+    
+    
+}
+// const getRandomNumber2 = (from = 1, to = 100) => { return Math. floor(Math. random() * (to - from + 1) + from); };
