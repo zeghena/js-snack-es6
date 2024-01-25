@@ -43,3 +43,10 @@ const teams = [
     console.log(team)
 
   })
+
+  let newTeamArray = teams.map((team) => {
+    const {name , foul} = team
+
+    return{ name, foul}
+
+  })
